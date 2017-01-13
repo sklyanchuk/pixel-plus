@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Название компании - самая клевая компания!</title>
 </head>
 <body class="no-js">
 
@@ -21,10 +21,10 @@
     <div class="container">
       <ul>
         <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-        <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
-        <li class="menu__item"><a href="delivery.html" class="menu__link">Доставка и оплата</a></li>
-        <li class="menu__item"><a href="price.html" class="menu__link">Прайс-лист</a></li>
-        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Прайс-лист</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
       </ul>
     </div>
   </nav>
@@ -35,9 +35,124 @@
     </div>
   </div>
 
-  <main>
+  <main class="content">
     <div class="continer">
-
+      <nav class="content__nav">
+        <ul class="content__nav-inner">
+          <li class="content__nav-item">
+            <a href="index.html" class="content__nav-link">Главная</a>
+          </li>
+          <li class="content__nav-item">
+            <a href="#" class="content__nav-link">Каталог</a>
+          </li>
+          <li class="content__nav-item content__nav-item_current">
+            <a href="#" class="content__nav-link">Бытовая техника</a>
+          </li>
+        </ul>
+      </nav>
+      <aside class="content__catalog">
+        <ul class="content__nav-aside">
+          <li class="content__nav-aside-item"><a href="#" class="content__nav-aside-link">Автомобили</a></li>
+          <li class="content__nav-aside-item">
+            <a href="#" class="content__nav-aside-link content__nav-aside-link_current">Бытовая техника</a>
+            <ul class="content__nav-aside-inner">
+              <li class="content__nav-aside-inner-item">
+                <a href="#" class="content__nav-aside-inner-link content__nav-aside-inner-link_current">Микроволновки</a>
+              </li>
+              <li class="content__nav-aside-inner-item">
+                <a href="#" class="content__nav-aside-inner-link">Холодильники</a>
+              </li>
+              <li class="content__nav-aside-inner-item">
+                <a href="#" class="content__nav-aside-inner-link">Посудомоечные машины</a>
+              </li>
+              <li class="content__nav-aside-inner-item">
+                <a href="#" class="content__nav-aside-inner-link">Чайники</a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__nav-aside-item">
+            <a href="#" class="content__nav-aside-link">Мобильная техника</a>
+          </li>
+          <li class="content__nav-aside-item">
+            <a href="#" class="content__nav-aside-link">Компьютеры</a>
+          </li>
+          <li class="content__nav-aside-item">
+            <a href="#" class="content__nav-aside-link">Одежда</a>
+          </li>
+          <li class="content__nav-aside-item">
+            <a href="#" class="content__nav-aside-link">Недвижимость</a>
+          </li>
+        </ul>
+        <p class="price-list">
+          <a href="src/price-list.xls" download ><img src="excel.png" alt="Скачать прайс-лист" width="97" height="111"></a><br>
+          Прайс-лист
+        </p>
+      </aside>
+      <div class="content__items">
+        <article class="content__item">
+          <figure class="content__item-figure">
+            <img src="item.jpg" alt="Изображение товара" class="content__item-image">
+            <figcaption class="content__item-caption">Самый клевый чайник, который надо купить!</figcaption>
+          </figure>
+          <p class="content__item-price">1 900 р.</p>
+        </article>
+        <article class="content__item">
+          <figure class="content__item-figure">
+            <img src="item.jpg" alt="Изображение товара" class="content__item-image">
+            <figcaption class="content__item-caption">Самый клевый чайник, который надо купить!</figcaption>
+          </figure>
+          <p class="content__item-price">1 900 р.</p>
+        </article>
+        <article class="content__item">
+          <figure class="content__item-figure">
+            <img src="item.jpg" alt="Изображение товара" class="content__item-image">
+            <figcaption class="content__item-caption">Самый клевый чайник, который надо купить!</figcaption>
+          </figure>
+          <p class="content__item-price">1 900 р.</p>
+        </article>
+        <article class="content__item">
+          <figure class="content__item-figure">
+            <img src="item.jpg" alt="Изображение товара" class="content__item-image">
+            <figcaption class="content__item-caption">Самый клевый чайник, который надо купить!</figcaption>
+          </figure>
+          <p class="content__item-price">1 900 р.</p>
+        </article>
+        <article class="content__item">
+          <figure class="content__item-figure">
+            <img src="item.jpg" alt="Изображение товара" class="content__item-image">
+            <figcaption class="content__item-caption">Самый клевый чайник, который надо купить!</figcaption>
+          </figure>
+          <p class="content__item-price">1 900 р.</p>
+        </article>
+        <div class="content__pages">
+          <a href="#" class="content__page"></a>
+          <a href="#" class="content__page"></a>
+          <a href="#" class="content__page content__page_current"></a>
+          <a href="#" class="content__page"></a>
+          <a href="#" class="content__page"></a>
+          <a href="#" class="content__page"></a>
+          <a href="#" class="content__page"></a>
+        </div>
+        <div class="content__about-company">
+          <p class="content__about-company-block">
+            Компания «Пиксель Плюс» существует более 6 лет, за это время мы
+            принимали участие в разработке более чем 700 сайтов, поэтому можем
+            уверенно называть себя профессионалами. На данный момент наш
+            коллектив состоит из более чем 30 сотрудников работающих в двух
+            офисах в Москве и Зеленограде.характерные для этого жанра мотивы:
+            неразделённой любви, ухода молодости, угасания души. </p>
+          <p class="content__about-company-block">
+            Одним из основных направлений работ нашей компании является
+            поисковое продвижение сайтов, на данной момент мы работаем
+            с более чем 150 постоянными клиентами по более чем 11 000 поисковым
+            запросам. При этом в работе основной акцент мы делаем на качестве
+            работ, а так же применяем собственные уникальные разработки в
+            области SEO продвижения. На данный момент отдел SEO состоит из
+            9 человек под руководством ведущего специалиста, преимущественно
+            работающих в нашем московском офисе.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -49,16 +164,28 @@
       </section>
       <section class="footer__column footer__nav">
         <ul class="footer__nav-inner">
-          <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">Главная</a></li>
-          <li class="footer__nav-item"><a href="catalog.html" class="footer__nav-link">Каталог</a></li>
-          <li class="footer__nav-item"><a href="delivery.html" class="footer__nav-link">Доставка и оплата</a></li>
-          <li class="footer__nav-item"><a href="price.html" class="footer__nav-link">Прайс-лист</a></li>
-          <li class="footer__nav-item"><a href="contacts.html" class="footer__nav-link">Контакты</a></li>
+          <li class="footer__nav-item">
+            <a href="index.html" class="footer__nav-link">Главная</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Каталог</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Доставка и оплата</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Прайс-лист</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Контакты</a>
+          </li>
         </ul>
       </section>
       <section class="footer__column footer__additional">
         <p class="pixel-plus-logo">
-          <a href="https://pixelplus.ru" class="pixel-plus-link">Разработка сайта</a>&nbsp;&ndash;<br>
+          <a href="https://pixelplus.ru" class="pixel-plus-link">
+
+          Разработка сайта</a>&nbsp;&ndash;<br>
           компания&nbsp;&#171;Пиксель&nbsp;Плюс&#187;
         </p>
       </section>
