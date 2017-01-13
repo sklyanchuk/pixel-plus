@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Название компании - самая клевая компания!</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="no-js">
 
@@ -159,7 +162,7 @@
   <footer class="footer">
     <div class="container">
       <section class="footer__column footer__contacts">
-        <p class="footer__copyright">@ 2012 - 2013 ЗАО &#171;Компания&#187;</p>
+        <p class="footer__copyright">@ 2012 &ndash; 2013 ЗАО &#171;Компания&#187;</p>
         <a href="mailto:info@name.ru" class="footer__email">info@name.ru</a>
       </section>
       <section class="footer__column footer__nav">
@@ -184,7 +187,6 @@
       <section class="footer__column footer__additional">
         <p class="pixel-plus-logo">
           <a href="https://pixelplus.ru" class="pixel-plus-link">
-
           Разработка сайта</a>&nbsp;&ndash;<br>
           компания&nbsp;&#171;Пиксель&nbsp;Плюс&#187;
         </p>
@@ -192,8 +194,15 @@
     </div>
   </footer>
 
-  <div class="feedback">
+  <form action="" method="post" name="feedback" class="feedback">
+    <p class="feedback__title">Обратная связь</p>
+    <label for="name">Ваше имя *<input type="text" name="name" class="feedback__input"></label>
+    <label for="phone">Телефон *<input type="phone" name="phone" class="feedback__input"></label>
+    <label for="email">Email *<input type="email" name="email" required class="feedback__input"></label>
+    <label for="message">Сообщение<input type="text" name="message" class="feedback__input"></label>
+    <input type="submit" class="feedback__submit" value="Отправить">
+  </form>
 
-  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
