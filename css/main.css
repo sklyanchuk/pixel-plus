@@ -1,8 +1,69 @@
+/*  Base styles */
 body {
   font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+  height: 100%
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Header */
+.header {
+  background-color: #dcdcdc;
+  height: 230px;
+  position: relative;
+}
+.header__logo {
+  float: left;
+  height: 100%;
+  vertical-align: middle;
+}
+.logo {
+  width: 273px;
+  height: 100px;
+  margin-left: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__contacts {
+  float: right;
+  text-align: right;
+}
+.header__phones {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 46px;
+  margin: 32px 0 7px 0;
 }
 .header__phone {
-  font-family: "Open Sans Condensed Light", sans-serif;
+  display: block;
+  text-decoration: none;
+}
+.header__feedback-link {
+  font-size: 24px;
+  text-decoration: none;
+  border-bottom: 2px dashed #767676;
+}
+
+
+/* Feedback form */
+.feedback_hidden {
+  display: none;
 }
 
 /* Fonts */
