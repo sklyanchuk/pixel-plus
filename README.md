@@ -1,8 +1,8 @@
 <h1>Тестовое задание на должность «WEB разработчик, HTML верстальщик» в компании Пиксель Плюс - 3 уровень сложности</h1>
-<h3><em>Ссылки на материалы:</em></h3>
-<span>PSD<a href="http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg">http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.psd</a></span>
-<span>JPG<a href="http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg">http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg</a></span>
-<h3><em>Тестовое задание содержит:</em></h3>
+<h3>Ссылки на материалы:</h3>
+<p>PSD<a href="http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg">http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.psd</a></p>
+<p>JPG<a href="http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg">http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg</a></p>
+<h3>Тестовое задание содержит:</h3>
 <ol>
   <li>PSD файл с макетом. Макет разбит по слоям и сгруппирован по папкам:
     <ul>
@@ -17,7 +17,7 @@
   <li>JPG файл с макетом.</li>
   <li>Текстовое описание задания и требования.</li>
 </ol>
-<h3><em>Описание задания и требования:</em></h3>
+<h3>Описание задания и требования:</h3>
 <li>Необходимо засечь время выполнения с момента ознакомления с заданием до окончания верстки. Это важно для оценки скорости работы.</li>
 <li>Основной шрифт PT Sans 14px и межстрочное расстояние 22px (если иное не указано на макете). Цвет текста должен соответствовать макету. Шрифт подключается с сервиса Google Fonts.</li>
 <li>Шапка, меню и подвал сайта должны тянуться на всю ширину сайта. При этом содержимое шапки, меню и подвала должно помещаться в область шириной в 980px + отступы по 10px с каждой стороны. При уменьшении или увеличении ширины окна браузера верстка не должна ехать.</li>
