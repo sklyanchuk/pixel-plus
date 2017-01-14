@@ -35,7 +35,6 @@ body {
 .logo {
   width: 273px;
   height: 100px;
-  margin-left: 50px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -74,8 +73,8 @@ body {
   text-align: center;
   list-style: none;
   margin: 0;
+  padding: 0;
   height: 60px;
-  padding-left: 50px;
 }
 .menu__item {
   display: inline-block;
@@ -88,7 +87,8 @@ body {
   font-size: 30px;
   font-weight: 400;
   text-decoration: none;
-  padding: 0 16px;
+  padding: 0 18px;
+  letter-spacing: 1px;
 }
 .menu__link:hover {
   text-decoration: underline;
@@ -109,11 +109,99 @@ body {
 }
 
 
+/* Slider */
+.slider {
+  height: 400px;
+  background-color: #999;
+}
+
 /* Content */
 .content__catalog {
   float: left;
   width: 200px;
 }
+.content__nav {
+  height: 40px;
+}
+.content__nav-inner {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.content__nav-item {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+}
+.content__nav-item::after {
+  position: absolute;
+  content: "/";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+.content__nav-item_current::after {
+  display: none;
+}
+.content__nav-link {
+  color: #767676;
+}
+.content__nav-link_current {
+  text-decoration: none;
+  cursor: default;
+}
+
+.content__nav-aside {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 355px;
+}
+.content__nav-aside-link,
+.content__nav-aside-inner-link {
+  color: #767676;
+  text-decoration: none;
+}
+.content__nav-aside-item {
+  padding-bottom: 6px;
+}
+.content__nav-aside-link {
+  font-size: 18px;
+}
+.content__nav-aside-link_current,
+.content__nav-aside-inner-link_current {
+  text-decoration: underline;
+}
+.content__nav-aside-inner-link_current {
+  font-weight: bold;
+}
+.content__nav-aside-inner-link {
+  font-size: 14px;
+}
+.content__nav-aside-link:hover,
+.content__nav-aside-inner-link:hover {
+  text-decoration: underline;
+}
+.content__nav-aside-inner {
+  padding-left: 20px;
+}
+
+.price-list {
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+.price-list-download {
+  width: 97px;
+  height: 111px;
+  display: block;
+  margin: auto;
+  background-image: url("../img/excel.png");
+}
+
 .content__items {
   float: right;
   width: 780px;
@@ -161,6 +249,7 @@ body {
 .content__pages {
   text-align: center;
   height: 25px;
+  margin-top: 10px;
 }
 .content__page-number {
   display: inline-block;
@@ -178,7 +267,7 @@ body {
 }
 .content__about-company-column {
   width: 368px;
-  height: 440px;
+  height: 430px;
   display: inline-block;
   margin: 0;
   padding: 30px 0;
