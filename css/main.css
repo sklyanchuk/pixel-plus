@@ -158,7 +158,37 @@ body {
   right: 15px;
   transform: translateY(-50%);
 }
-
+.content__pages {
+  text-align: center;
+  height: 25px;
+}
+.content__page-number {
+  display: inline-block;
+  width: 25px;
+  heigth: 25px;
+  line-height: 25px;
+  text-decoration: none;
+}
+.content__page-number_current {
+  font-size: 18px;
+}
+.content__about-company {
+  border-top: 1px solid #000;
+  margin-top: 60px;
+}
+.content__about-company-column {
+  width: 368px;
+  height: 440px;
+  display: inline-block;
+  margin: 0;
+  padding: 30px 0;
+}
+.content__about-company-column_left {
+  float: left;
+}
+.content__about-company-column_right {
+  float: right;
+}
 
 /* Footer */
 .footer {
