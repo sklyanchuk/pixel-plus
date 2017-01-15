@@ -198,13 +198,14 @@
     </div>
   </footer>
 
-  <form action="" method="post" name="feedback" class="feedback feedback_hidden">
+  <form action="" method="post" name="feedback" class="feedback feedback_hidden feedback_popup">
     <p class="feedback__title">Обратная связь</p>
     <label for="name">Ваше имя *<input type="text" name="name" class="feedback__input"></label>
     <label for="phone">Телефон *<input type="phone" name="phone" class="feedback__input"></label>
     <label for="email">Email *<input type="email" name="email" required class="feedback__input"></label>
-    <label for="message">Сообщение<input type="text" name="message" class="feedback__input"></label>
+    <label for="message">Сообщение<input type="text" name="message" class="feedback__input feedback__input_message"></label>
     <input type="submit" class="feedback__submit" value="Отправить">
+    <a href="#" class="feedback__close-btn"></a>
   </form>
 
   <script src="js/script.js"></script>
