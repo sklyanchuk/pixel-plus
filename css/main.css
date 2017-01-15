@@ -251,15 +251,15 @@ body {
   margin: 0;
   position: relative;
 }
-.content__item-price::after {
-  position: absolute;
-  content: "";
+.content__add-to-cart {
   width: 28px;
-  height: 21px;
+  height: 100%;
+  display: inline-block;
+  float: right;
   background-image: url("../img/cart.png");
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 15px;
 }
 .content__pages {
   text-align: center;
