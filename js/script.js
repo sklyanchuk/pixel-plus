@@ -1,3 +1,4 @@
+// Popup feedback form
 var formOpenBtn = document.querySelector('.header__feedback-link');
 var feedbackForm = document.querySelector('.feedback');
 var formCloseBtn = document.querySelector('.feedback__close-btn');
@@ -25,3 +26,14 @@ function closeFormEsc(event) {
 formOpenBtn.addEventListener('click', showForm);
 formCloseBtn.addEventListener('click', closeForm);
 window.addEventListener('keydown', closeFormEsc);
+
+// Slides
+var slides = document.querySelectorAll('.slider__slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide, 4000);
+
+function nextSlide() {
+    slides[currentSlide].classList.remove('slider__slide_show');
+    currentSlide = (++currentSlide)%slides.length;
+    slides[currentSlide].classList.add('slider__slide_show');
+}
