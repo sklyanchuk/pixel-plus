@@ -5,6 +5,7 @@ body {
   color: #767676;
   line-height: 22px;
   position: relative;
+  min-width: 1020px;
 }
 .overlay::before {
   position: absolute;
@@ -166,7 +167,7 @@ body {
   z-index: 2;
 }
 .slider__controls {
-  width: 100%;
+  width: 980px;
   height: 60px;
   position: absolute;
   top: 50%;
