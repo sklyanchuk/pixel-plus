@@ -1,9 +1,12 @@
+// If no js
+var body = document.querySelector('body');
+body.classList.remove('no-js');
+
 // Popup feedback form
 var formOpenBtn = document.querySelector('.header__feedback-link');
 var feedbackForm = document.querySelector('.feedback');
 var formCloseBtn = document.querySelector('.feedback__close-btn');
 var inputName = document.querySelector('.feedback__input');
-var body = document.querySelector('body');
 
 function showForm(event) {
   event.preventDefault();
@@ -31,9 +34,23 @@ window.addEventListener('keydown', closeFormEsc);
 var slides = document.querySelectorAll('.slider__slide');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide, 4000);
+var next = document.querySelector('.slider__control_prev');
+var previous = document.querySelector('.slider__control_next');
+
+next.addEventListener("click", nextSlide);
+previous.addEventListener("click", previousSlide);
 
 function nextSlide() {
+    clearInterval(slideInterval);
+    goToSlide(currentSlide + 1);
+}
+function previousSlide() {
+    clearInterval(slideInterval);
+    goToSlide(currentSlide - 1);
+}
+function goToSlide(n) {
+    slideInterval = setInterval(nextSlide, 4000);
     slides[currentSlide].classList.remove('slider__slide_show');
-    currentSlide = (++currentSlide)%slides.length;
+    currentSlide = (n+slides.length)%slides.length;
     slides[currentSlide].classList.add('slider__slide_show');
 }
