@@ -4,6 +4,17 @@ body {
   font-size: 14px;
   color: #767676;
   line-height: 22px;
+  position: relative;
+}
+.overlay::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 10;
 }
 * {
   box-sizing: border-box;
@@ -338,7 +349,7 @@ body {
 
 /* Feedback form */
 .feedback_hidden {
-  /*display: none;*/
+  display: none;
 }
 .feedback_popup {
   position: absolute;
@@ -353,6 +364,7 @@ body {
   padding: 25px 64px;
   text-align: center;
   background-color: #fff;
+  z-index: 20;
 }
 .feedback__title {
   font-size: 24px;
