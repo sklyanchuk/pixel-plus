@@ -1,4 +1,7 @@
 /*  Base */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -6,6 +9,9 @@ body {
   line-height: 22px;
   position: relative;
   min-width: 1020px;
+}
+body, html {
+  height: 100%;
 }
 .overlay::before {
   position: absolute;
@@ -16,9 +22,6 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, .5);
   z-index: 10;
-}
-* {
-  box-sizing: border-box;
 }
 .container {
   margin: auto;
@@ -32,7 +35,15 @@ body {
   display: table;
   clear: both;
 }
-
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -220px;
+}
+.push {
+  height: 220px;
+}
 
 /* No js */
 .no-js .slider__controls {
@@ -471,11 +482,6 @@ body {
   box-shadow: inset 0 0 25px #ff8383;
   outline: none;
   position: relative;
-}
-.feedback__input-required::before{
-  position: absolute;
-  content: "Поле обязательно для заполнения";
-  font-family: cursive;
 }
 .feedback__input_message {
   height: 141px;
