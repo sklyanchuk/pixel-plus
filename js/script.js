@@ -6,22 +6,25 @@ body.classList.remove('no-js');
 var formOpenBtn = document.querySelector('.header__feedback-link');
 var feedbackForm = document.querySelector('.feedback');
 var formCloseBtn = document.querySelector('.feedback__close-btn');
-var inputName = document.querySelector('.feedback__input');
+var input = document.querySelectorAll('.feedback__input');
 
 function showForm(event) {
   event.preventDefault();
   body.classList.add('overlay');
-  feedbackForm.classList.remove('feedback_hidden');
-  inputName.focus();
+  feedbackForm.classList.add('feedback_visible');
+  input[0].focus();
+  feedbackForm.classList.add('feedback_animate');
 }
 function closeForm(event) {
   event.preventDefault();
-  feedbackForm.classList.add('feedback_hidden');
+  feedbackForm.classList.remove('feedback_animate');
+  feedbackForm.classList.remove('feedback_visible');
   body.classList.remove('overlay');
 }
 function closeFormEsc(event) {
   if (event.keyCode == 27) {
-    feedbackForm.classList.add('feedback_hidden');
+    feedbackForm.classList.remove('feedback_animate');
+    feedbackForm.classList.remove('feedback_visible');
     body.classList.remove('overlay');
   }
 }
@@ -29,6 +32,7 @@ function closeFormEsc(event) {
 formOpenBtn.addEventListener('click', showForm);
 formCloseBtn.addEventListener('click', closeForm);
 window.addEventListener('keydown', closeFormEsc);
+
 
 // Slides
 var slides = document.querySelectorAll('.slider__slide');

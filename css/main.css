@@ -421,9 +421,6 @@ body {
 }
 
 /* Feedback form */
-.feedback_hidden {
-  display: none;
-}
 .feedback_popup {
   position: absolute;
   top: 283px;
@@ -433,6 +430,7 @@ body {
           transform: translateX(-50%);
 }
 .feedback {
+  display: none;
   width: 465px;
   height: 578px;
   margin: auto;
@@ -440,6 +438,17 @@ body {
   text-align: center;
   background-color: #fff;
   z-index: 20;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+       -o-transition: opacity 1s;
+          transition: opacity 1s;
+}
+.feedback_visible {
+  display: block;
+}
+.feedback_animate {
+  opacity: 1;
 }
 .feedback__title {
   font-size: 24px;
@@ -453,7 +462,20 @@ body {
   width: 100%;
   height: 41px;
   border: 1px solid #c3c3c3;
+  border-radius: 2px;
   margin-bottom: 15px;
+  padding: 10px 15px;
+}
+.feedback__input-required {
+  border-color: #ff8383;
+  box-shadow: inset 0 0 25px #ff8383;
+  outline: none;
+  position: relative;
+}
+.feedback__input-required::before{
+  position: absolute;
+  content: "Поле обязательно для заполнения";
+  font-family: cursive;
 }
 .feedback__input_message {
   height: 141px;
