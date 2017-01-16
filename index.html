@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Название компании - самая клевая компания!</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -207,9 +207,9 @@
 
   <form action="" method="post" name="feedback" class="feedback feedback_popup">
     <p class="feedback__title">Обратная связь</p>
-    <label for="name">Ваше имя *<input type="text" name="name" required class="feedback__input"></label>
-    <label for="phone">Телефон *<input type="phone" name="phone" required class="feedback__input"></label>
-    <label for="email">Email *<input type="email" name="email" required class="feedback__input"></label>
+    <label for="name">Ваше имя *<input type="text" name="name" required class="feedback__input" placeholder="Поле обязательно для заполнения" autofocus></label>
+    <label for="phone">Телефон *<input type="phone" name="phone" required class="feedback__input" placeholder="Поле обязательно для заполнения"></label>
+    <label for="email">Email *<input type="email" name="email" required class="feedback__input" placeholder="Поле обязательно для заполнения"></label>
     <label for="message">Сообщение<textarea name="message" class="feedback__input feedback__input_message"></textarea></label>
     <input type="submit" class="feedback__submit" value="Отправить">
     <a href="#" class="feedback__close-btn"></a>
